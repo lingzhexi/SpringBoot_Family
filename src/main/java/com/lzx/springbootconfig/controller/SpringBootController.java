@@ -15,4 +15,10 @@ public class SpringBootController {
     public String show(@PathVariable String msg){
         return "show:" + msg;
     }
+
+    @RequestMapping("/show")
+    public String showInfo(){
+        return "show";
+    }
+
 }
